@@ -30,7 +30,20 @@ public class BuildDataUser implements Question<UserModel> {
                 .firstname(data.get("nombre"))
                 .lastname(data.get("apellido"))
                 .build();
+        UserModel userModel = UserModel.builder()
+                .email(data.get("correo"))
+                .username(data.get("usuario"))
+                .password(data.get("clave"))
+                .name(nameUser)
+                .address(address)
+                .phone("3217080552")
+                .build();
 
-        return UserModel;
+        return userModel;
     }
+
+    public static BuildDataUser was(){
+        return  new BuildDataUser();
+    }
+
 }

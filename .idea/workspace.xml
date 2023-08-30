@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c77a7ca8-606c-4988-9788-22adba97b0a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/models/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/models/GeolocalizacionAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/models/NameUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/models/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/questions/BuildDataUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/utils/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/utils/Excel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/fakestoreapi/runners/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/fakestoreapi/stepDefinitions/PostUserStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/PostUser.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/models/responseDelet/AddressUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/models/responseDelet/DeletUserModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/models/responseDelet/GeolocationUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/models/responseDelet/NameUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/questions/DeleteResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/questions/PutDataResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/questions/ServerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/tasks/DeleteUserTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/tasks/PostUserTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/tasks/PutUserTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/fakestoreapi/stepDefinitions/DelteUserStepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/fakestoreapi/stepDefinitions/PutUserStepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DeleteUser.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/PutUser.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/questions/BuildDataUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fakestoreapi/questions/BuildDataUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Datos/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Datos/Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fakestoreapi/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fakestoreapi/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fakestoreapi/stepDefinitions/PostUserStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fakestoreapi/stepDefinitions/PostUserStepDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +71,7 @@
       <recent name="C:\Users\USUARIO\Videos\ProyectosAutomatizacion_SQA\RetoAutoServicios\src\main\java\com\fakestoreapi\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\Videos\ProyectosAutomatizacion_SQA\RetoAutoServicios\src\main\java\com\fakestoreapi\models\ResponsePost" />
       <recent name="C:\Users\USUARIO\Videos\ProyectosAutomatizacion_SQA\RetoAutoServicios\src\main\resources\Datos" />
     </key>
   </component>

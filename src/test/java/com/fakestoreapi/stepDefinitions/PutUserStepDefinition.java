@@ -1,10 +1,9 @@
 package com.fakestoreapi.stepDefinitions;
 
 import com.fakestoreapi.questions.ServerResponse;
-import com.fakestoreapi.tasks.PostUserTask;
+import com.fakestoreapi.tasks.PutUserTask;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.thucydides.core.util.EnvironmentVariables;
@@ -12,7 +11,7 @@ import net.thucydides.core.util.EnvironmentVariables;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.equalTo;
 
-public class PostUserStepDefinition {
+public class PutUserStepDefinition {
     private EnvironmentVariables environmentVariables;
     private String theRestApiBaseUrl;
     Actor user = Actor.named("user");
@@ -23,16 +22,14 @@ public class PostUserStepDefinition {
         user.whoCan(CallAnApi.at(theRestApiBaseUrl));
 
     }
-
-    @When("I consume the endpoint {string} and I send the user information email {string}, username {string}, password {string}, firstname {string} ,lastname {string}")
-    public void iConsumeTheEndpointAndISendTheUserInformationEmailUsernamePasswordFirstnameLastname(String email, String username, String password, String firstname, String lastname, String endpoint) {
+    @When("I consume  endpoint {string} and I send the user information email {string}, username {string}, password {string}, firstname {string} ,lastname {string}")
+    public void iConsumeEndpointAndISendTheUserInformationEmailUsernamePasswordFirstnameLastname(String string, String string2, String string3, String string4, String string5, String string6) {
         user.attemptsTo(
-        PostUserTask.on()
-                );
+                PutUserTask.on()
+        );
     }
-
-    @Then("I can validate the response services {int}")
-    public void iCanValidateTheResponseServices(Integer resServer) {
+    @Then("I can validate the response service {int}")
+    public void iCanValidateTheResponseService(Integer resServer) {
         user.should(
                 seeThat(
                         "The response code was: ",
@@ -40,7 +37,8 @@ public class PostUserStepDefinition {
                         equalTo(resServer)
                 )
         );
-
     }
+
+
 
 }
